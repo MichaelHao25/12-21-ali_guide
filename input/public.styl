@@ -1,0 +1,128 @@
+﻿@import "reset.css";
+/*@import "function.css";*/
+/*
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#99ffffff,endColorstr=#99ffffff)";  
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+background:rgba(255,255,255,.8);
+
+
+filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
+
+.w{max-width: 1340px;width: 100%;margin: 0 auto;}
+body{
+	font-size: 100%;
+}
+html
+	font-size 20Px
+.full-screen
+	&
+	body
+		width 100%
+		height 100%
+		@media(max-width 900px)
+			min-height 100vh
+			font-size 18Px
+		
+	body
+		background #222222 url(../img/hico5.png) center center no-repeat
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items center
+		justify-content center
+		@media(max-width 600px)
+			display block
+	.container
+		text-align center
+		public-padding = 8%
+		@media(max-width 600px)
+			padding 15% 0
+		h1
+			font-size 48px
+			color #fff
+			padding-bottom public-padding
+			line-height 1
+			@media(max-width 900px)
+				padding-bottom 5%
+				line-height 1.5
+			@media(max-width 600px)
+				font-size 36px
+		p
+			font-size 18px
+			color #fff
+			padding-bottom public-padding
+			@media(max-width 900px)
+				margin 0 auto
+				width 80%
+				line-height 1.5
+				padding-bottom 5%
+			@media(max-width 600px)
+				font-size 16px
+		.orange
+			padding 0 10px
+			font-size 180%
+			color #fff60b
+		dl
+			width 50%
+			margin 0 auto
+			line-height 2
+			text-align left
+			counter-reset count
+			@media(max-width 900px)
+				width 80%
+				text-align center
+			@media(max-width 900px)
+				width 100%
+				box-sizing border-box
+				padding 0 15px
+			dt
+				font-size 24px
+				color #fff60b
+				@media(max-width 600px)
+					font-size 22px
+			dd
+				font-size 18px
+				color #fff
+				@media(max-width 600px)
+					font-size 16px
+				&:before
+					content counter(count)' . '
+					counter-increment: count
+				.orange
+					padding 0
+					font-size 100%
+		.btn
+			display block
+			margin (public-padding - 3%) auto 0
+			width 280px
+			height 64px
+			line-height 64px
+			text-align center
+			letter-spacing 3px
+			background #02b2cc
+			color #fff
+			font-size 36px
+			font-weight bold
+			padding-left 3px
+			box-sizing border-box
+			border-radius 10px
+			border 1px solid #1c92a3
+		.qrcode
+			padding-top (public-padding - 3%)
+			.pic
+				font-size 0
+				img
+					display inline-block
+					vertical-align top
+					width 90px
+					height 90px
+					margin 0 5px
+			p
+				padding-bottom 0
+				text-align center
+				font-size 16px
+				line-height 2
+				color #fff
